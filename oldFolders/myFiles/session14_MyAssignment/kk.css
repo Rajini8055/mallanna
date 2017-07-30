@@ -1,0 +1,43 @@
+body{
+  margin: 0px;
+}
+
+ textarea{
+  background-color: inherit;
+  width: 100%;
+  height: auto;
+ }
+
+
+.outBox{
+  margin-top: 10px;
+  background-color: #ebed78;
+  width: 400px;
+    border-radius: 5px;
+      box-shadow: 5px 5px 5px #7d8184;
+      padding: 5px;
+}
+
+.header{
+  height: auto;
+  width: auto;
+  background-color: #f4cd41;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #7d8184;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#heading{
+  padding-left: 20px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.footer{
+  padding-left: 10px;
+}
+
+#removeBtn, #closeBtn, #deleteBtn{
+  background-color: inherit;
+}

@@ -1,0 +1,109 @@
+// $scope.name = 'John Doe';
+// $scope.occupation = 'Web developer';
+// $scope.getName = function(){
+//   return 'John Doe';
+// }
+// console.log($scope);
+
+--------------------------------------------------------------------------------
+var people = function(fname,lname,$scope){
+ return 'mallanna';
+}
+
+console.log(angular.injector().annotate(people));
+--------------------------------------------------------------------------------
+/*$log services*/
+$scope.name = "mallanna";
+$scope.formattedName = $filter('uppercase')($scope.name);
+$log.info($scope.name);
+$log.info($scope.formattedName);
+--------------------------------------------------------------------------------
+getting other dependencies by adding them in the script tag and later in the modules
+
+<script type="text/javascript" src="//code.angularjs.org/1.5.0/angular-messages.min.js"></script>
+
+/*HTML*/
+using the dependency---> 'ngMessages'
+<form name="myForm">
+  <label>
+        Enter text:
+        <input type="text" ng-model="field" name="myField" required minlength="5" maxlength="8"  />
+  </label>
+  <div ng-messages="myForm.myField.$error" role="alert">
+    <div ng-message="required">You did not enter a field</div>
+    <div ng-message="minlength,maxlength">Your message must be between 5 and 8 characters</div>
+    /div>
+</form>
+--------------------------------------------------------------------------------
+<div id="ngrepeat" > <!--same as forin loop rule(local variable) is to iterate, rules is the array-->
+  <ul>
+    <li ng-repeat="rule in rules">{{rule.name}}</li>
+  </ul>
+
+</div>
+--------------------------------------------------------------------------------
+  // $scope.characters = 5;
+
+<label for="Enter Text"></label>
+<input type="text" class="form-control" id="details"name="" value="" ng-model="handle" style="width:50%;">
+
+<h1>binding from textbox / {{kk()}}</h1>
+<!-- here we have practiced ng-if, ng-show, ng-hide, ng-class, ng-repeat -->
+<div id="errorMessage" class="alert" ng-class="{'alert-info':handle.length<characters,
+'alert-danger':handle.length>characters}" ng-show="handle.length !== characters">
+
+    <div class="" ng-show="handle.length<characters">
+      you have lessthan 5 characters
+    </div>
+    <div class="" ng-show="handle.length>characters">
+      you have morethan 5 characters
+    </div>
+</div>
+--------------------------------------------------------------------------------
+// $scope.rules =[
+//   {rulename:'must have follwed'},
+//   {rulename:'must not be followed'},
+//   {rulename:'you have to follow'}
+// ];
+// $http.get('/messages')
+//       .success(function(result){
+//         $scope.rules = result;
+//       })
+//       .error(function(data,status){
+//         console.log(data);
+//       });
+/**error part**/
+// $scope.newRule ='';
+// $scope.addRule = function(){
+//   $http.post('/message',{name:$scope.newRule})
+//         .success(function(result){
+//             $scope.rules = result;
+//             $scope.newRule='';   // this is to empty the text box value after posting
+//         })
+//         .error(function(data,status){
+//             console.log(data);
+//         });
+// }
+--------------------------------------------------------------------------------
+$scope.name = '';
+$scope.handle = $scope.name;
+
+$scope.kk = function() {
+  return $filter('lowercase')($scope.handle);
+}
+--------------------------------------------------------------------------------
+$scope.name = nameService.name;
+
+$scope.$watch('name',function(){
+  nameService.name = $scope.name;
+});
+****************************************************
+$scope.name = nameService.name;
+$scope.num = $routeParams.num || 1;
+$scope.$watch('name',function(){
+  nameService.name = $scope.name;
+});
+--------------------------------------------------------------------------------
+/* address: '555, main st, NY, 1111'  --> this is used for accessing
+                                        via single and two way bindings(as a object)*/
+--------------------------------------------------------------------------------

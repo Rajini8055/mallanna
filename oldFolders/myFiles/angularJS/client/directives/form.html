@@ -1,0 +1,45 @@
+<form class="form-horizontal" ng-controller="addController">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Save Message Form</legend>
+
+
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="name">sender</label>
+      <div class="col-md-4">
+        <input id="name" name="name" type="text" ng-model="name" placeholder="Enter text" class="form-control input-md" >
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="message">message</label>
+      <div class="col-md-4">
+        <input id="message" name="message" type="text" ng-model="message" placeholder="Enter message" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="when">When</label>
+      <div class="col-md-4">
+        <input id="when" name="when" type="text" ng-model="when" placeholder="When" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="addMessageBtn"></label>
+      <div class="col-md-4">
+        <button id="addMessageBtn" name="addMessageBtn" ng-click="addMessage($event)" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>

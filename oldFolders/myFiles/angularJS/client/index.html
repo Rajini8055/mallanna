@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Angular JS Practice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <form class="form-inline" action="index.html" method="post">
+    <a href="#/main" class="btn btn-primary">main</a>
+    <a href="#/second" class="btn btn-primary">Second</a>
+
+
+  </form>
+
+  <!-- <div class="" ng-controller="displayController">
+    <ul>
+      <li ng-repeat="rule in rules">{{rule.name}}</li>
+    </ul>
+  </div> -->
+
+    <!-- Here displaying form using custom directive,
+    we can also achieve through routes if we want to display using events -->
+      <!-- <form-display></form-display> -->
+
+
+
+  <div class="" ng-view>
+
+  </div>
+
+  <!--jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <!-- angular 1.5 version-->
+  <script type="text/javascript" src="//code.angularjs.org/1.5.0/angular.js"></script>
+  <!-- Route povider, injecting this dependency to my app-->
+  <script type="text/javascript" src="//code.angularjs.org/1.5.0/angular-route.min.js"></script>
+
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js">
+  </script>
+
+  <script type="text/javascript" src="js/displayMessagesController.js">
+  </script>
+  <script type="text/javascript" src="js/addMessages.js">
+  </script>
+  <script type="text/javascript" src="js/directives.js">
+  </script>
+</body>
+
+</html>
