@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "name": "Read Js",
+      "notes": "Completed basic javascript \n",
+      "status": "40"
+    },
+    {
+      "name": "Read Java",
+      "notes": "Completed basic java \n",
+      "status": "70"
+    }
+  ]
+}

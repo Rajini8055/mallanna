@@ -1,0 +1,20 @@
+body{
+  background-color: #ccc;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.itemDetails {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  drop-shadow:5px 5px 5px black;
+  margin: 15px;
+  float: left;
+  display: block;
+  list-style-type: none;
+  box-shadow: 5px 5px 5px black;
+    padding: 15px;
+}

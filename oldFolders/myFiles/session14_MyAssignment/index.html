@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sticky Notes</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="kk.css" />
+</head>
+
+<body>
+  <div class="container outBox">
+
+    <div class="header">
+      <div class="row">
+        <div class="col-md-9">
+          <i class="fa fa-file-text fa-lg" aria-hidden="true"></i><span id="heading">Stick Notes</span>
+        </div>
+        <div class="col-md-3">
+          <button type="button" name="remove" id="removeBtn"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></button>
+          <button type="button" name="close" id="closeBtn"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <textarea name="userData" rows="8" cols="auto"></textarea>
+    </div>
+
+    <div class="footer">
+      <button type="button" name="delete" id="deleteBtn"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+
+  </div>
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <!--my Js File -->
+  <script type="text/javascript" src="kk.js"></script>
+</body>
+
+</html>

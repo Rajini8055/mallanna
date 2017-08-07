@@ -1,0 +1,26 @@
+<div id="searchResultTemplate" >
+  <a href="#" class="list-group-item">
+    <h1 list-group-item-heading>{{personObject.name}}</h1>
+    <p>{{  formattedAddressFunction( {aperson:personObject} )  }}</p>
+    <b><ng-transclude></ng-transclude></b>
+  </a>
+  <!--
+      here person.name and preson.address are accessing from the parent scope
+      but when we created isolated scope then it is not possible to access directly from parent scope,
+      here we have to declare in the isolated scope what are the things we have to access, then declare them
+      in the search-result template as attributes(or element, etc). good luck !!!!
+      and here replace the parent binded object name with the isolated scope object names declared in our directive
+
+      ******* this is to access from the object from isolated scope ******
+      <h1 list-group-item-heading><***comment**person.name ==>previous from direct parent**> {{personObject.name}}</h1>
+      <p>{{personObject.address}}</p>
+
+      ****************as function ************
+      <a href="#" class="list-group-item">
+        <h1 list-group-item-heading>{{personObject.name}}</h1>
+        <p>{{  formattedAddressFunction( {aperson:personObject} )  }}</p>
+      </a>
+
+      -->
+
+</div>

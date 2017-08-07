@@ -1,0 +1,20 @@
+<h1>This is  {{name}} page</h1>
+<input type="text" name="" value="" ng-model="name">
+
+      <div class="list-group">
+        <!-- Displaying searchResult template using custom directive,
+              you can also do by calling as a attribute, class, comment -->
+          <search-result person-object='person' formatted-address-function='formattedAddress(aperson)'ng-repeat='person in people'>
+                      *this is the note I want diplay inside the custom directive
+          </search-result>
+
+
+          <!--**** MY UNDERSTANDING ***
+          <search-result person-name='{{person.name}}' person-address='{{person.address}}'></search-result>
+          person-name='{{person.name}}'
+              Here: person-name is we declared in the isolated scope,
+                    person.name is what we want to access from parent in that attribute
+                  THIS IS ONE WAY BINDING SINCE WE ARE ACCEPTING THE TEXT FROM THE OBJECT
+          **WHAT IF WE WANT TO ACCESS AS OBJECT**
+          <search-result person-object='person'></search-result>-->
+      </div>
