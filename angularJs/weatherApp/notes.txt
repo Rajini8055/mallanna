@@ -1,0 +1,25 @@
+angularjs.org --> develop --> Download --> choose the version
+
+Angular Application:
+1. Create a module-weatherApp
+	i.decalre the dependencies	
+		a.ngRoute,
+		b.ng-Resource
+
+2. declare the controllers for each different data
+	i.home controller
+	ii.Forecast controller
+3. configure the routes for corresponding pages using $routeProvider 
+	* define the templateUrl and controller for corresponding routing pages
+4. insert ngView in the html page, ngView displays data of corresponding controller depending on the
+	route
+
+==================================================================================================
+CUSTOM SERVICE
+1. create a service with a name - cityService
+2. Inject this service as a dependency in all controllers
+3. declare the service function at service
+4. create a watch in homecontroller
+5. Bind the wacth using "ng-model" to textBox in the form "homePage.html"
+6. interpolate the "city" in the forecast page
+NOTE: write a notes on digest loop 
