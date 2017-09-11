@@ -1,0 +1,21 @@
+An important note regarding API usage
+
+In the following lectures we use the free openweathermap API to get weather data. Since the recording of the lectures, openweathermap has now required a free sign up to use their data. You then receive a key that you include in the URL when you request data.
+
+The change is not significant, however to get your weather app working you will now need to do the following:
+
+1) Follow the instructions here: http://openweathermap.org/appid to sign up, and retrieve your API key.
+
+2) When using the code in the next lectures we use this URL to get weather data:
+
+http://api.openweathermap.org/data/2.5/forecast/daily
+
+all you need to do is change this URL to:
+
+http://api.openweathermap.org/data/2.5/forecast/daily?APPID=YOURAPIKEY
+
+but put the API Key you get from openweathermap in place of the phrase 'YOURAPIKEY'.
+
+
+my API KEY for weather app
+      key:  ebf612919bc64a4f97f1fe995b2c3b8d
