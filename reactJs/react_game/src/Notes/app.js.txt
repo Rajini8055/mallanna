@@ -1,0 +1,22 @@
+ 1st day number game app.js
+ state = {
+   	counter : 0
+   }
+
+   incrementCounter = (incrementValue)=>{
+   	this.setState((prevState)=>({
+   		counter: prevState.counter+incrementValue
+   	}));
+   }
+
+  render() {
+    return (
+        <div>
+            <Buttons incrementValue={1} onClickFunction={this.incrementCounter}/>
+            <Buttons incrementValue={5} onClickFunction={this.incrementCounter}/>
+            <Buttons incrementValue={10} onClickFunction={this.incrementCounter}/>
+        	<Result  counter={this.state.counter}/>
+        </div>    
+    );
+  }
+}
